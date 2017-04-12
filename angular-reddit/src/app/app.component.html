@@ -18,7 +18,7 @@
 
 <div class="ui grid posts">
   <app-article
-    *ngFor="let item of articles"
+    *ngFor="let item of getSortedArticles()"
     [article]="item">
   </app-article>
 </div>
