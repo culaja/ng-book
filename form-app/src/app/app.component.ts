@@ -5,5 +5,9 @@ import { Component, Input } from '@angular/core';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  title = 'app works!';
+  skuList: string[] = [];
+
+  insertSku(skuName: string): void {
+    this.skuList.push(skuName);
+  }
 }
